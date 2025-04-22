@@ -8,7 +8,7 @@ int main(){
 	vocales[2] = 'i';
 	vocales[3] = 'o';
 	vocales[4] = 'u';
-	for(int i = 0; i < 5; i++) {
+	for(int i = 0; i < 5; i++){
 		cout<<vocales<<endl;
 		cout<<"vocales ["<<i<<"]: "<<vocales[i]<<endl;
 	}
