@@ -4,7 +4,7 @@ float resis(float v, float a){
     return (v/a);
 };
 int main(){
-    float v, a, resis;
+    float v, a;
     cout<<"ingreses V"<<endl;
     cin>>v;
     cout<<"ingrese I"<<endl;
