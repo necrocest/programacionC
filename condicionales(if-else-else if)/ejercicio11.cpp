@@ -4,9 +4,6 @@
 #include<string>
 using namespace std;
 void mensaje(){
-    string nombre;
-    int cedula;
-    cout<<"Hola señor "<<nombre<<" con cedula: "<<cedula<<endl;
     cout<<"Escoga una opcion: "<<endl;
     cout<<"1. Depositar"<<endl;
     cout<<"2. Retirar"<<endl;
@@ -15,7 +12,7 @@ void mensaje(){
 }
 int main(){
     int opcion; 
-    float saldo_inicial=1000, saldo_final;
+    float saldo_inicial=1000, saldo_final, saldo_final1;
     int cedula;
     float x; //cantida a introducir o retirar
     string nombre;
@@ -26,22 +23,21 @@ int main(){
         cin>>nombre;
     cout<<"introduzca su cedula"<<endl;
         cin>>cedula;
+    cout<<"Hola señor "<<nombre<<" con cedula: "<<cedula<<endl;
     mensaje();
         cin>>opcion;
-    while(opcion!=3){
     if(opcion == 1){
         cout<<"cuanto desea depositar"<<endl;
         cin>>x;
         saldo_final = saldo_inicial +  x;
-        mensaje();
+        cout<<"dinero en el cajero: "<<saldo_final<<endl;
         cin>>opcion;
     }else if(opcion==2){
         cout<<"cuanto desea retirar"<<endl;
         cin>>x;
-        saldo_final = saldo_inicial - x;
-        mensaje();
+        saldo_final1 = saldo_inicial - x;
+        cout<<"dinero en el cajero: "<<saldo_final1<<endl;
         cin>>opcion;
-    }
     }
     return 0;
 }
