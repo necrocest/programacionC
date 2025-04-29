@@ -1,4 +1,4 @@
-//eer un arreglo de n elementos y hallar la suma de tudos sus elementos
+//Leer un arreglo de n elementos y hallar la suma de tudos sus elementos
 //imprimer el vector leido.
 #include<iostream>
 using namespace std;
