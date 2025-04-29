@@ -7,6 +7,7 @@ int main(){
     cin>>a;
     for(int i = 1;i <= a; ++i){
         factorial *= i;
+        cout<<i<<endl;
     }
     cout<<factorial<<endl;
     return 0;
