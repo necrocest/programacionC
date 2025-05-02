@@ -9,11 +9,11 @@ int main(){
     int vector[100];
     cout<<"cuantos elementos quiere en el vector"<<endl;
     cin>>a;
-    for(int i = 1; i <= a; i++){
+    for(int i = 0; i <= a; i++){
         cout<<"ingrese el numero que quiere en el arreglo"<<endl;
         cin>>vector[i];
     }
-    for(int j = 1; j <= a ; j++){
+    for(int j = 0; j <= a ; j++){
         cout<<"en el indice: "<<j<<" esta: "<<vector[j]<<endl;
     }
     return 0;
