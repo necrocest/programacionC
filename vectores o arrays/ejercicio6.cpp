@@ -2,7 +2,9 @@
 using namespace std;
 int main(){
     int a; 
-    int multiplicacion = 0, division = 0, suma = 0;
+    int multiplicacion = 0;
+    float division = 0;
+    int suma = 0;
     int total = 0;
     int vector[3] = {80,90,70};
     int vector2[3] = {2, 3, 1};
