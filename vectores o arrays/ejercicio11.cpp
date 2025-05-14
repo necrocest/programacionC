@@ -10,7 +10,6 @@ int main(){
     for(int i = 1; i <a; i++){
         cout<<"introducir libro "<<i + 1<<endl;
         cout<<"introducir titulos: " ; getline(cin, titulos_libro[i]);
-        cout<<"\n"<<endl;
         cout<<"introducir autores:  "; getline(cin, autores[i]);   
         /*getline se usa mas que todo para textos con espacios es mejor que usar cin*/
     }
