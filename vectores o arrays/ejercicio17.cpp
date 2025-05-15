@@ -1,0 +1,1 @@
+/*Desarrolle un programa que lea un vector de enteros y cuente cuántos números pares contiene.*/
