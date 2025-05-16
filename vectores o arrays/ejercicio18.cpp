@@ -4,7 +4,7 @@
 using namespace std;
 int main(){
     int numero, digito, invertido;
-    cout<<"Ingrese el numero maximo 6 digitos"<<endl;
+    cout<<"Ingrese el numero maximo 5 digitos"<<endl;
     cin>>numero;
     if(numero<0){
         cout<<"No es palindromo"<<endl;
