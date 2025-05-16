@@ -25,12 +25,15 @@ int main(){
         }
         suma = suma + temperatura[i];
         promedio = suma / 7; /*calcular el promedio*/
-    }for(int j = 0; j < 7; j++){
-        cout<<"el dia "<< dias[j] <<" hubo una temperatura de "<< temperatura[j]<<" C"<<endl;    
-        if(temperatura[j] > max){
-            max = temperatura[j];  /*comprobar si la temperatura fue mayor a 35*/
-            cout<<"el dia "<<dias[j]<<" estuvo por encima de 35."<<endl;
-        }                                 
+    }
+    for(int j = 0; j < 7; j++){
+        cout<<"el dia "<< dias[j] <<" hubo una temperatura de "<< temperatura[j]<<" C"<<endl;                                     
+    }
+    for(int b=0;b<7;b++){
+        if(temperatura[b] > max){
+            max = temperatura[b];  /*comprobar si la temperatura fue mayor a 35*/
+            cout<<"el dia "<<dias[b]<<" estuvo por encima de 35."<<endl;
+        }
     }
     cout<<"la temperatura mayor es: "<<mayor<<" C"<<endl; 
     cout<<"la el promedio semanal es: "<<promedio<<" C"<<endl;
