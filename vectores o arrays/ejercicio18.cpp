@@ -1,5 +1,5 @@
 /*Realiza un programa que determine si un vector de enteros es un palíndromo 
-(es decir, se lee igual de izquierda a derecha que de derecha a izquierda).*/
+(es decir, se lee igual de izquierda a derecha que de derecha a izquierda).*/ /*realizar un vector*/
 #include<iostream>
 using namespace std;
 int main(){
