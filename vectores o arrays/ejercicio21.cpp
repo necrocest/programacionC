@@ -6,7 +6,7 @@ int main(){
     cout<<"ingrese la dimension del array"<<endl;
     cin>>x;
     int array[x];
-    for(int i = 1; i < x; i++){
+    for(int i = 0; i < x; i++){
         cout<<"ingrese los numeros del array"<<endl;
         cin>>array[x];
         if(array[i]%2 == 0){
