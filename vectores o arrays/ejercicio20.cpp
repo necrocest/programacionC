@@ -29,7 +29,7 @@ int main(){
             mayor=lista_compras[c];
         }
         else {
-            menor=lista_compras[c];
+            mayor=lista_compras[c];
         }
     }
     cout<<"el producto "<<a<<" cuesta mas de 100k"<<endl;
