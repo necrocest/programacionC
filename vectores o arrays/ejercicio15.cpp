@@ -34,6 +34,7 @@ int main(){
             max = temperatura[b];  /*comprobar si la temperatura fue mayor a 35*/
             cout<<"el dia "<<dias[b]<<" estuvo por encima de 35."<<endl;
         }
+        cout<<"\n";
     }
     cout<<"la temperatura mayor es: "<<mayor<<" C"<<endl; 
     cout<<"la el promedio semanal es: "<<promedio<<" C"<<endl;
