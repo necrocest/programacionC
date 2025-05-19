@@ -31,3 +31,25 @@ int main() {
     cout << "." << endl;
     return 0;
 }
+/*i=0 (valor 2):
+
+Compara con j=1 (5) → no igual.
+
+j=2 (2) → igual. Marca duplicados[0] = true, imprime "2".
+
+i=1 (valor 5):
+
+Compara con j=2 (2) → no igual.
+
+j=3 (8) → no igual.
+
+j=4 (5) → igual. Marca duplicados[1] = true, imprime ", 5".
+
+i=2 (valor 2):
+
+duplicados[2] es false, pero al comparar con j=3 (8) y j=4 (5) → no hay coincidencias.
+
+i=3 (valor 8) e i=4 (valor 5): No generan nuevas salidas.
+
+Salida final:
+Elementos duplicados: 2, 5.*/
