@@ -9,7 +9,7 @@ int main(){
     int matriz[filas][columnas];
     for(int i = 0; i < filas; i++){
         for(int j = 0; j < columnas; j++){
-            cout<<"ingrese los numeros de la fila "<<i<<";"<<j<<endl;
+            cout<<"ingrese los numeros de la fila "<<i<<"; y la columna "<<j<<endl;
             cin>>matriz[i][j];
         }
     }for(int i = 0; i < filas; i++){
