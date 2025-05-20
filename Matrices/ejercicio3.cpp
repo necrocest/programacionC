@@ -7,8 +7,16 @@ int main(){
     int matriz[f][c];
     matriz[1][1]=8;
     for(int i = 0; i < f; i++){
-        matriz[i][0] = 0;
-        cout<<"Matriz ["<<i<<"][0] = "<<matriz[i][0]<<endl;
+        for(int j = 0; j < c; j++){
+        matriz[i][j] = 0;
+        }
     }
+    for(int i = 0; i < f; i++){
+        for(int j = 0; j < c; j++){
+        cout<<" "<<matriz[i][j]<<" ";
+        }
+        cout<<"\n";
+    }
+    
     return 0;
 }
