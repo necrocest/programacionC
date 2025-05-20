@@ -4,3 +4,5 @@ explorando c++:
 -Variables, condicionales
 -Estructuras repetitivas
 -Arreglos o vectores
+-Matriz
+
