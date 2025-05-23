@@ -17,7 +17,7 @@ int main(){
             matriz1[i][j] = dato1;
         }
     }
-    cout<<"matriz original"<<endl;
+    cout<<"matriz 1"<<endl;
     for(int i = 0; i < x; i++){
         for(int j = 0; j < y; j++){
            cout<<" "<<matriz[i][j]<<" "; 
