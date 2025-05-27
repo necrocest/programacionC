@@ -6,10 +6,11 @@ el algoritmo debe cumplir con las siguientes instrucciones:
     - el de la mitad
     - el ultimo valor
 "se debe actualizar e imprimir"*/
+/*modificado*/
 #include<iostream>
 using namespace std;
 int main(){
-    int x, opcion, a;
+    int x, opcion, a, mitad = 0;
     cout<<"ingrese la dimension del vector: ";cin>>x;
     int array[x];
     for(int i = 0; i < x; i++){
@@ -32,14 +33,15 @@ int main(){
             array[0] = a;
         }
         if(opcion == 2){
+            x/2;
             cout<<"introduca el cambio"<<endl;
             cin>>a;
-            array[1] = a;
+            array[x] = a;
         }
         if(opcion == 3){
             cout<<"introduca el cambio"<<endl;
             cin>>a;
-            array[2] = a;
+            array[x-1] = a;
         }
     }
     for(int j = 0; j < x; j++){
