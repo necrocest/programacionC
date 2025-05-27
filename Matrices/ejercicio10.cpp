@@ -10,20 +10,35 @@ int main(){
 	int matriz1[filas][columnas];
 	int C[filas][columnas];
 	/*rellenado las matrices*/
+	cout<<"Introduzca los numero de la primera matriz"<<endl;
 	for(int i=0;i<filas;i++){
 		for(int j=0;j<columnas;j++){
-			cout<<"Introduzca los numero de la primera matriz"<<endl;
-			cout<<"introduza los numeros de la fila ["<<i<<"]"<<"y de las columnas ["<<i<<"]";
+			cout<<"introduza los numeros de la fila ["<<i<<"]"<<"y de las columnas ["<<j<<"]";
 			cin>>matriz[i][j];
 		}
 	}
-	for(int i=0;i<filas;i++){
-		for(int j=0;j<columnas;j++){
-			cout<<"Introduzca los numero de la primera matriz"<<endl;
-			cout<<"introduza los numeros de la fila ["<<i<<"]"<<"y de las columnas ["<<i<<"]";
-			cin>>matriz[i][j];
+	cout<<"Introduzca los numero de la segunda matriz"<<endl;
+	for(int a=0;a<filas;a++){
+		for(int b=0;b<columnas;b++){
+			cout<<"introduza los numeros de la fila ["<<a<<"]"<<"y de las columnas ["<<b<<"]";
+			cin>>matriz1[a][b];
 		}
 	}
+	/*imprimir matrices originales*/
+	for(int i=0;i<filas;i++){
+		for(int j=0;j<columnas;j++){
+			cout<<" "<<matriz[i][j]<<" ";
+		}
+		cout<<"\n";
+	}
+	cout<<"\n";
+	for(int a=0;a<filas;a++){
+		for(int b=0;b<columnas;b++){
+			cout<<" "<<matriz1[a][b]<<" ";
+		}
+		cout<<"\n";
+	}
+	cout<<"\n";
 	//Multiplicando las matrices
 	for(int i=0;i<filas;i++){
 		for(int j=0;j<columnas;j++){
@@ -38,7 +53,6 @@ int main(){
 			cout<<" "<<C[i][j]<<"  ";
 		}
 		cout<<"\n";
-	}	
-	
+	}
 	return 0;
 }
