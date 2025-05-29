@@ -21,6 +21,8 @@ int main(){
     cout<<"Palabra invertida: "<<palabra1<<"\n";
     if(strcmp(palabra,palabra1)==0){
         cout<<"la palabra "<<palabra1<<" es palindroma";
+    }else{
+        cout<<"no es palindroma";
     }
     cout<<"\n";
     return 0;
