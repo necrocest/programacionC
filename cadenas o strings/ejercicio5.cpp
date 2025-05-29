@@ -10,7 +10,7 @@ int main(){
     cout<<"introduzca una palabra: "; 
     cin.getline(palabra,20,'\n');
     strcpy(palabra1, palabra);
-    strrev(palabra1);
+    /*strrev(palabra1);*/
     if(strcmp(palabra,palabra1)==0){
         cout<<"es palindroma";
     }else{
