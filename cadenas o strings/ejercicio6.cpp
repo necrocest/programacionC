@@ -11,11 +11,12 @@ int main(){
     cin.getline(palabra2,20,'\n');
     /*convertir en mayusculas*/
     for(int i = 0; palabra1[i];i++){
-        palabra1[i]=toupper(static_cast<unsigned char>(palabra1[i]));
+        palabra1[i]=toupper(palabra1[i]);
     }
     /*convertir en mayuscula palabra 2*/
+    /*funcion toupper(lo que se quiere poner en mayucula[iteracion]))*/
     for(int i = 0; palabra2[i];i++){
-        palabra2[i]=toupper(static_cast<unsigned char>(palabra2[i]));
+        palabra2[i]=toupper(palabra2[i]);
     }
     cout<<palabra1<<"\n";
     cout<<palabra2<<"\n";
