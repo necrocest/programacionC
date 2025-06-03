@@ -1,8 +1,18 @@
 explorando c++:
+
 -Operadores numericos
+
 -Operadores logico
--Variables, condicionales
+
+-Variables
+
+-condicionales
+
 -Estructuras repetitivas
+
 -Arreglos o vectores
+
 -Matriz
+
+-cadenas o string
 
