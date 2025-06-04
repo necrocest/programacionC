@@ -29,6 +29,7 @@ int main(){
                 mayor = matriz[i][j];
             }
         }
+        
         cout<<"mayores de las filas"<<i<<" "<<mayor<<endl;
     }
     /*columnas*/

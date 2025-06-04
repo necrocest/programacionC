@@ -5,7 +5,7 @@ int main(){
     int columnas;
     int mayor = 0, mayor1 = 0, mayor2 = 0;
     int  mayor3 = 0, mayor4 = 0, mayor5 = 0;
-    int promedio = 0;
+    float promedio = 0;
     cout<<"Ingrese el numero de filas "; cin>>filas;
     cout<<"ingrese el numero de columnas "; cin>>columnas;
     int matriz[filas][columnas];
@@ -29,7 +29,6 @@ int main(){
             }
     }
     /*ultima fila*/
-    promedio/filas;
     int fila_del_medio = filas/2;
     for(int j = 1; j < columnas; j++){
             if(matriz[fila_del_medio][j] > mayor1){
@@ -68,6 +67,7 @@ int main(){
     cout<<mayor4<<endl;
     cout<<mayor5<<endl;
     cout<<"promedios"<<endl;
-    cout<<"ultima fila"<<promedio<<endl;
+    
+    cout<<"ultima fila "<<promedio/filas<<endl;
     return 0; 
 }
