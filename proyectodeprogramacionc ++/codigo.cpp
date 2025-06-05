@@ -47,18 +47,18 @@ int main(){
             numeroCuentas[totalCuentas] = nuevoNumero;
 
             /*validar nombte del titular*/
-            cout<<"Ingrese el nombre del titular de la cuenta: "<<endl;
+            cout<<"Ingrese el nombre del titular de la cuenta: ";
             cin.ignore();
             getline(cin,titulares[totalCuentas],'\n');
             /*tipo de cuenta*/
-            cout<<"Ingrese el tiepo de cuenta(ahorros o corriente)"<<endl;
+            cout<<"Ingrese el tiepo de cuenta(ahorros o corriente)";
             getline(cin, tipoCuenta[totalCuentas]);
             /*se inicia en 0 porque esta recien creada*/
             saldo[totalCuentas] = 0.0;
             /*contador para almacenar las cuentas creadas*/
             totalCuentas++;
-            cout<<"Cuenta creada exitosamente"<<endl;
-            cout<<"Bienvenido al Banco WFM"<<endl;
+            cout<<"*** Cuenta creada exitosamente :) *** "<<endl;
+            cout<<"*** Bienvenido al Banco WFM ***"<<endl;
         }else if(opcion == 2){
             /*Listar cuentas*/
             for(int i = 0; i < totalCuentas; i++){
@@ -70,7 +70,55 @@ int main(){
             }
             cout<<"\n";
         }else if(opcion == 3){
-            
+            int numerodecuenta;
+            double monto;
+            cout<<"Ingrese el numero de cuenta: ";
+            cin>>numerodecuenta;
+            /*aca validaremos la existencia del numero de cuenta*/
+            int indice = -1;
+            for(int i = 0; i < totalCuentas; i++){
+                if(numeroCuentas[i] = numerodecuenta){
+                    indice = i;
+                    break;
+                }
+            }
+            if(indice == -1){
+                cout<<"Error, Cuenta no encontrada"<<endl;
+            }
+            cout<<"Ingrese el monto que quiere Depositar ";
+            cin>>monto;
+            if(monto > 0){
+                saldo[indice] += monto;
+                cout<<"Nuevo saldo "<<saldo[indice]<<endl;
+            }else{
+                cout<<"Monto invalido"<<endl;
+            }
+            cout<<"\n";
+        }else if(opcion == 4){
+            int numerodecuenta;
+            double monto;
+            cout<<"Ingrese el numero de cuenta: ";
+            cin>>numerodecuenta;
+            /*aca validaremos la existencia del numero de cuenta*/
+            int indice = -1;
+            for(int i = 0; i < totalCuentas; i++){
+                if(numeroCuentas[i] = numerodecuenta){
+                    indice = i;
+                    break;
+                }
+            }
+            if(indice == -1){
+                cout<<"Error, Cuenta no encontrada"<<endl;
+            }
+            cout<<"Ingrese el monto que quiere Retirar ";
+            cin>>monto;
+            if(monto > 0 && monto < saldo[indice]){
+                saldo[indice] -= monto;
+                cout<<"Nuevo saldo "<<saldo[indice]<<endl;
+            }else{
+                cout<<"Monto invalido"<<endl;
+            }
+            cout<<"\n";
         }
         
     }
