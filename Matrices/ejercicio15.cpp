@@ -27,6 +27,7 @@ int main(){
             if(matriz[filas -1][j] > mayor){
                 mayor = matriz[filas - 1][j];
             }
+
     }
     /*ultima fila*/
     int fila_del_medio = filas/2;
