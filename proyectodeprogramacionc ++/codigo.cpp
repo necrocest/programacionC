@@ -121,6 +121,32 @@ int main(){
                 cout<<"Monto invalido"<<endl;
             }
             cout<<"\n";
+        }else if(opcion == 5){
+            /*transferir*/
+            int origen, destino;
+            int monto;
+            cout<<"Ingrese la cuenta de origen "; cin>>origen;
+            cout<<"Ingrese la cuenta destino "; cin>>destino;
+            cout<<"ingrese el monto "; cin>>monto;
+             int indiceOrigen = -1;
+             int indiceDestino = -1;
+             for(int i = 0; i < totalCuentas; i++){
+                if(numeroCuentas[i] == indiceOrigen){
+                    indiceOrigen = i;
+                }
+                if(numeroCuentas[i] == indiceDestino){
+                    indiceDestino = i;
+                }
+             }
+             if(indiceOrigen == -1 || indiceDestino == -1){
+                    cout<<"Error; alguna de las dos cuentas es invalida"<<endl;
+             }
+             if(monto <= 0){
+                cout<<"Monto insuficiente"<<endl;
+             }
+             if(saldo[indiceOrigen] < monto){
+                cout<<"fondos insuficientes"<<endl;
+             }
         }
         
     }
