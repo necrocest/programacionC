@@ -78,7 +78,7 @@ int main(){
             /*aca validaremos la existencia del numero de cuenta*/
             int indice = -1;
             for(int i = 0; i < totalCuentas; i++){
-                if(numeroCuentas[i] = numerodecuenta){
+                if(numeroCuentas[i] == numerodecuenta){
                     indice = i;
                     break;
                 }
@@ -132,10 +132,10 @@ int main(){
              int indiceOrigen = -1;
              int indiceDestino = -1;
              for(int i = 0; i < totalCuentas; i++){
-                if(numeroCuentas[i] == indiceOrigen){
+                if(numeroCuentas[i] == origen){
                     indiceOrigen = i;
                 }
-                if(numeroCuentas[i] == indiceDestino){
+                if(numeroCuentas[i] == destino){
                     indiceDestino = i;
                 }
              }
@@ -149,8 +149,8 @@ int main(){
                 cout<<"fondos insuficientes"<<endl;
              }
              /*sumar y restar en el saldo*/
-             saldo[indiceOrigen] += monto;
-             saldo[indiceDestino] -= monto;
+             saldo[indiceOrigen] -= monto;
+             saldo[indiceDestino] += monto;
              /*Registrar en la matriz*/
              tranferencia[indiceOrigen][indiceDestino] += monto;
              cout<<"tranferencia exitosa"<<endl;
