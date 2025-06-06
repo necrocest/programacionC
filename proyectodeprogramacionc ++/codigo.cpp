@@ -28,7 +28,7 @@ int main(){
         cout<<"Presiona 0 para salir"<<endl;
         cin>>opcion; 
         if(opcion == 1){    
-            cout<<"crear cuenta"<<endl;
+            cout<<"****Crear cuenta****"<<endl;
             if(totalCuentas >= maxCuentas){
                 cout<<"Ya no se pueden regitrar mas cuentas"<<endl;
             }
@@ -39,6 +39,7 @@ int main(){
             for(int i = 0; i < totalCuentas; i++){
                 if(numeroCuentas[i] == nuevoNumero){
                     existe = true;
+                    break;
                 }
             }
             if(existe){
@@ -103,7 +104,7 @@ int main(){
             /*aca validaremos la existencia del numero de cuenta*/
             int indice = -1;
             for(int i = 0; i < totalCuentas; i++){
-                if(numeroCuentas[i] = numerodecuenta){
+                if(numeroCuentas[i] == numerodecuenta){
                     indice = i;
                     break;
                 }
@@ -147,8 +148,13 @@ int main(){
              if(saldo[indiceOrigen] < monto){
                 cout<<"fondos insuficientes"<<endl;
              }
+             /*sumar y restar en el saldo*/
+             saldo[indiceOrigen] += monto;
+             saldo[indiceDestino] -= monto;
+             /*Registrar en la matriz*/
+             tranferencia[indiceOrigen][indiceDestino] += monto;
+             cout<<"tranferencia exitosa"<<endl;
         }
-        
     }
     return 0;
 }
