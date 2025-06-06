@@ -85,6 +85,7 @@ int main(){
             if(indice == -1){
                 cout<<"Error, Cuenta no encontrada"<<endl;
             }
+            /*depositar*/
             cout<<"Ingrese el monto que quiere Depositar ";
             cin>>monto;
             if(monto > 0){
@@ -107,6 +108,7 @@ int main(){
                     break;
                 }
             }
+            /*retirar*/
             if(indice == -1){
                 cout<<"Error, Cuenta no encontrada"<<endl;
             }
