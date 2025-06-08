@@ -17,8 +17,9 @@ int main(){
         }
     }
     for(int i = 1; i < 8; i++){
+            cout<<setw(14)<<diasTrabajo[i -1]<<"|";
         for(int j = 1; j < 4; j++){
-            cout<<" "<<diasTrabajo[i][j]<<"  ";
+            cout<<setw(8)<<diasTrabajo[i][j]<<"|";
         }
         cout<<"\n";
     }
@@ -30,7 +31,7 @@ int main(){
     cout<<"La produccion total de la semana: "<<suma<<endl;
     division = suma /7;
     cout<<"El promedio de la semana es: "<<division<<endl;
-    
+
     for(int a = 1; a < 8; a++){
         int suma3 = 0;
         for(int b = 1; b < 4; b++){
@@ -44,4 +45,5 @@ int main(){
     }
     cout<<"Dia mayor "<<p<<" y la cantidad producida es: "<<mayor<<endl;
     return 0;
+
 }
