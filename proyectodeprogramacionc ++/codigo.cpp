@@ -24,7 +24,6 @@ int main(){
         cout<<"3. Depositar"<<endl;
         cout<<"4. Retirar"<<endl;
         cout<<"5. Tranferir"<<endl;
-        cout<<"6. Matriz de transferencia"<<endl;
         cout<<"Presiona 0 para salir"<<endl;
         cin>>opcion; 
         if(opcion == 1){    
@@ -153,7 +152,27 @@ int main(){
              saldo[indiceDestino] += monto;
              /*Registrar en la matriz*/
              tranferencia[indiceOrigen][indiceDestino] += monto;
-             cout<<"tranferencia exitosa"<<endl;
+             cout<<"tranferencia exitosa"<<endl; 
+        }
+        if(opcion == 0){
+            sistemaActivo = false;
+            cout<<"Salir. Gracias por tu preferencia."<<endl;
+            cout<<"Hasta luego."<<endl;
+        }
+    }
+    cout<<"**Mostrar matriz de transferencia**"<<endl;
+    cout<<"\n Origen - Destino";
+    /*Encabezados de columnas*/
+    for (int i = 0; i < totalCuentas; i++) {
+    cout << setw(8) << numeroCuentas[i] << " |";
+    }
+    /*Línea separadora*/
+    cout << "\n" << string(15 + totalCuentas * 10, '-');
+    /*mostrar la matriz se transferencia*/
+    for(int i = 0; i < totalCuentas; i++){
+        cout<<"\n"<<setw(14)<<numeroCuentas[i]<<" |";
+        for(int j = 0; j < totalCuentas; j++){
+            cout<<setw(8)<<fixed<<setprecision(1)<<tranferencia[i][j]<<" |";
         }
     }
     return 0;
