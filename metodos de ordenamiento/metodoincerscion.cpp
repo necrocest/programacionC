@@ -19,7 +19,7 @@ int main(){
     }
     cout<<"\n";
     cout<<"orden descendente"<<endl;
-    for(int j = 5; j > 0; j--){
+    for(int j = 4; j >= 0; j--){
         cout<<array[j]<<" ";
     }
     cout<<"\n";
