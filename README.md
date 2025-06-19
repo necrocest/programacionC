@@ -16,3 +16,5 @@ explorando c++:
 
 -cadenas o string
 
+-Metodos de Ordenamiento
+
