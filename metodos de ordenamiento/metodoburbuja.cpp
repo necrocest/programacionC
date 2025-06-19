@@ -25,6 +25,5 @@ int main(){
     for(int i = 4; i >= 0 ; i--){
         cout<<array[i]<<" ";
     }
-    
     return 0;
 }
