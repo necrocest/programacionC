@@ -7,6 +7,7 @@ int main(){
     int a[5] = {1,2,3,4,5};
     int i, dato;
     bool band = false;
+    cout<<"ingrese un dato del 1 al 5 para comprobar la busqueda secuencial: " << endl; 
     cout << "Ingrese el dato a buscar: ";
     cin >> dato;
     i=0;
